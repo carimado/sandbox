@@ -20,14 +20,18 @@
 // }
 
 // Solution 2
-function productArray(arr) {
-    let result = arr.map((num, index) => {
-        let withoutSelf = arr.filter((_, i) => i !== index)
-        return withoutSelf.reduce((a, b) => a * b, 1)
-    })
-    return result
-}
+// function productArray(arr) {
+//     let result = arr.map((num, index) => {
+//         let withoutSelf = arr.filter((_, i) => i !== index)
+//         return withoutSelf.reduce((a, b) => a * b, 1)
+//     })
+//     return result
+// }
 
+// Solution 3 - codewars user
+function productArray(numbers){
+    return numbers.map(x => numbers.reduce((a,b) => a * b) / x)
+}
 
 console.log(productArray([12,20]))
 console.log(productArray([3,27,4,2]))
