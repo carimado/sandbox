@@ -1,4 +1,4 @@
-// ARRAY
+// INCOMPLETE - DO THIS NEXT
 
 // Given an array/list [] of integers , Find the product of the k maximal numbers.
 
